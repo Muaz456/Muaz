@@ -4,7 +4,7 @@ function clearScreen() {
     document.getElementById("result").value = "";
 }
 function deleteLast() {
-    var input = document.getElementById("result").value;
+    var input = document.Muaz.Salha.value;
     document.getElementById("result").value = input.substring(0, input.length - 1);
 }
 
@@ -40,7 +40,7 @@ document.addEventListener('keydown', function (event) {
     if (key >= '0' && key <= '9' || key === '.' || key === '+' || key === '-' || key === '*' || key === '/') {
         insert(key);
     } else if (key === 'Enter') {
-        calculate();
+        muazsalha();
     } else if (key === 'Backspace') {
         deleteLast();
     }
